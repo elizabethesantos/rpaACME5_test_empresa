@@ -1,0 +1,259 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Acme_DesconectarFechar" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,2780" sap2010:WorkflowViewState.IdRef="Acme_DesconectarFechar_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Workflows: Acme_DesconectarFechar&#xA;Descrição: Saia da Acme e feche a guia&#xA;Condição prévia: Conectado a qualquer página da Acme no Edge&#xA;Pós-condição: Saiu da Acme e fechou a guia&#xA;Argumentos: N/A&#xA;" DisplayName="Acme_DesconectarFechar" sap:VirtualizedContainerService.HintSize="546,2715" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Desconectar Fechar - inicio&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: ACME System 1 - Work Items" sap:VirtualizedContainerService.HintSize="484,1005" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="99b8edd4-01a6-4c65-ade6-a8f1d4807974" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,788" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Home'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="99b8edd4-01a6-4c65-ade6-a8f1d4807974" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items?page=15" CvElementArea="153, 288, 1146, 38" CvType="InputBox" DesignTimeRectangle="173, 299, 37, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Home'" FullSelectorArgument="&lt;webctrl aaname='Home' href='https://acme-test.uipath.com*' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Home' href='https://acme-test.uipath.com*' tag='A' type='' class='' check:innerText='Home' /&gt;" Guid="fbfb456f-9431-41d8-b7dc-f3402f46bc61" InformativeScreenshot="8ca7d911c4f66e0d0240c7ae079ef3f3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'User options'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="99b8edd4-01a6-4c65-ade6-a8f1d4807974" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/" CvTextArea="278, 458, 103, 20" CvTextArgument="User options" CvType="Text" DesignTimeRectangle="220, 444, 200, 46" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'User options'" FullSelectorArgument="&lt;webctrl parentid='dashmenu' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='dashmenu' tag='BUTTON' type='button' class='btn btn-default btn-lg dropdown-toggle' aaname='                  User options' check:innerText='User options' /&gt;" Guid="6b101411-1a02-40b5-95c6-27854b307e78" InformativeScreenshot="b0f54dbfc316521c1c555ca7d6b2f591.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://acme-test.uipath.com/reset-test-data" Version="V3" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reset Test Data'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="99b8edd4-01a6-4c65-ade6-a8f1d4807974" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/reset-test-data" CvElementArea="226, 631, 128, 37" CvTextArea="240, 642, 102, 13" CvTextArgument="Reset Test Data" CvType="Button" DesignTimeRectangle="228, 632, 125, 34" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Reset Test Data'" FullSelectorArgument="&lt;webctrl id='buttonRTD' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='buttonRTD' tag='BUTTON' type='button' class='btn btn-primary' aaname='Reset Test Data' check:innerText='Reset Test Data' /&gt;" Guid="823f6e1e-2c33-4a65-beee-ac61e8c99653" InformativeScreenshot="b19523fb93d4f3fb63a682e74060b4dc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Reset Test Data' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1358, -8, 1456, 876" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAReSURBVFhHvZdtbFNlFMcf3SxUfI0miLAEWdShCV+EGD9oUJBJAobwQb8IGklkKEQkcy8MZK90tGsnZbxsvkDmxsYkS8QFPhDYLIy+sbv2rhW3dYPFbGyVbYwJJMu2wzm3Prd317ZCc+uHf9vnPC/n13PPc57nMrZX6EPdQo39zyKf1wgAZJWQ2sJtzYVrkw+lDT9G5UbBZWB5TmC7XIlRHgnXJ4hSyecwAYwxAzawM/1EoKFSvLEh97eBjOw4xedmNg9k7LSFRO2sloEMg2Po0x3n+4tYMUaiUIr0SAiAiL5xwfrGqyvSt69hiZZuXzv6cwP+cQVAoRveqQtsizRBS33vHV6cTAD5agA0rG7o+SLSpHg0ODG9aGlFR+vy+kCl0l4p3HgpKkC6RgAA8GxSqQfY5zZgm22wq3XwFO+zOIeiA6z5OQyQctBXpTd6BdwZwrsNPVZuV2vJD3/YWOFl9xNmr5hULGwiW8v1OxvZpmZg5SKw7a2Y8e3Ax5c5g9EB1p4MA+hNnjssH7dlth2WHusMcrta8yt8wHLswIpwbEHbUW5P/e4KsK0XJDX2jBVw+30DPGkR7awIt8pOJ7xR03WO29VadNg/Ke1tLDJPfyvuUfbtbu5fn+MIvqK0HYmVAzMAzKJTAdCsXEQpBJimMQQwx+TNjzRm6PbUQ/x3lWc4cQC60nYZYOEhP+jxsTxqbAfMp3JurxZHNAY44p/iAHpFBB63eIF9jbmBJVhn9Bi5vdanPYAcASUA/mtgu7H24+H2nLVDttdoDZAaBWAB7Q4CwLo/d38cAE9Z7hsg4iOIC+B9BcDsfR6XdGrhFltW3XWe29VKq/JPSAAGHFsiyPs9LgBlJcQk8mGFA5ZlhxX1gTPcrlbKobCjOWavidvjAnjreEAG+Ph03yn21SVgmZfg9druAW5XK9mI2Y5HOct2gFUIbuH25w/EAfBmTRjgqH9ks1RK6VDBx9B5a+IF3sc1DbCE5TqoBEvb7drfE/N431xrx4MDrKwPA5D0Zeg8FxehwXvckHfh+icmVzCt7vfRxTkt/VmMzopinLv1IrxW03VTOTdaBKpjAbynOo6b/hzfwj46hxmO/ZQPGGZdGYac2plYZOgOSU4+s8HoFKxSzk2hHKBHg3VgntUnnxExI6AGIH3Y1NfGdmAufInHKk2ik48umBgRsusK3LDhbL9c6biYAZ1suyglMUbpILfX+R8QgNTUO77sg8beX58xeuAxrO3JeL7Pt4jjG3+5+lPf3UldpDlvH+++mXqgY/LlSj8srw1kcfsxMcZhFA1ASx0WYgDglSzhl9IfPcNpUQHwUro20iStNQsf47+v5ZjN6072lpy4Mrqw3BV81eSYKSPKjCq1D0ptc4Qx/6UK4a8XjY6hdcmUoJi86FsCCL2aIUQSdszGRHsYvylMWusRFNuLotoReh2UXs1CDXpXo9cl2l5ElwjxtblPEn50o0ZQQUmGf74ToZlro0+h8x4tMHhuvyezngAAAABJRU5ErkJggg==" InformativeScreenshot="86063a3eee4a6f8ff8d7edc0e2b67713.jpg" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" Title="ACME System 1 - Work Items" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="72f951ef-589d-48c6-9492-c27f59e03de0" DisplayName="CV Screen Scope 'pane'" sap:VirtualizedContainerService.HintSize="484,566" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+      <p:CVScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Text 'OK' (393,106,20,12)&quot;]" DesignTimeCacheId="72f951ef-589d-48c6-9492-c27f59e03de0" DesignTimeScaleFactor="1" DisplayName="CV Click - Texto" sap:VirtualizedContainerService.HintSize="400,185" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_1" InformativeScreenshot="068679513e25315e49877376ce25d460" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+              <p:CvClickWithDescriptor.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </p:CvClickWithDescriptor.CursorPosition>
+              <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                <uc:CvDescriptor Id="935bce29-5968-4796-b462-6a4d70a8ec16">
+                  <uc:CvDescriptor.Target>
+                    <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="393, 106, 20, 12" ElementType="Text" Text="OK" />
+                  </uc:CvDescriptor.Target>
+                </uc:CvDescriptor>
+              </p:CvClickWithDescriptor.DesignTimeDescriptor>
+              <p:CvClickWithDescriptor.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="091c6fc9-8a05-40ae-8177-e8df5c656439">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </p:CvClickWithDescriptor.Target>
+            </p:CvClickWithDescriptor>
+          </Sequence>
+        </ActivityAction>
+      </p:CVScope.Body>
+      <p:CVScope.DesignTimeCacheContainer>
+        <uc:CvCacheContainer>
+          <uc:CvCacheContainer.Caches>
+            <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
+              <uc:CVCache DataSent="False" DisplayName="Tela CV Click - 'OK' (Principal)" Id="72f951ef-589d-48c6-9492-c27f59e03de0" InformativeScreenshot="bbe0d8d3d5849e2f917bc436b43b2ed6" LogicalPosition="1855, 78" OcrText="S acme-test.uipath.com diz Your Test Data has been successfully reset. OK" Position="1855, 78" ScreenshotGuid="e2620972-14e7-4f80-bbf1-919864fca10c" ServerVersion="1">
+                <uc:CVCache.CvAnchorRelations>
+                  <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="0" />
+                </uc:CVCache.CvAnchorRelations>
+                <uc:CVCache.CvUiElements>
+                  <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="4">
+                    <uc:CvElementInfo Category="Button" Region="365, 87, 75, 49" />
+                    <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="364, 87, 76, 50" />
+                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="364, 89, 83, 44" />
+                    <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="372, 129, 78, 5" />
+                  </scg:List>
+                </uc:CVCache.CvUiElements>
+                <uc:CVCache.OcrTexts>
+                  <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="11">
+                    <uc:OcrTextInfo Region="0, 18, 4, 9" Text="S" />
+                    <uc:OcrTextInfo Region="25, 29, 160, 19" Text="acme-test.uipath.com" />
+                    <uc:OcrTextInfo Region="187, 29, 24, 15" Text="diz" />
+                    <uc:OcrTextInfo Region="25, 61, 29, 12" Text="Your" />
+                    <uc:OcrTextInfo Region="54, 61, 25, 12" Text="Test" />
+                    <uc:OcrTextInfo Region="81, 61, 28, 12" Text="Data" />
+                    <uc:OcrTextInfo Region="111, 60, 22, 13" Text="has" />
+                    <uc:OcrTextInfo Region="134, 60, 30, 13" Text="been" />
+                    <uc:OcrTextInfo Region="166, 60, 70, 16" Text="successfully" />
+                    <uc:OcrTextInfo Region="236, 61, 34, 12" Text="reset." />
+                    <uc:OcrTextInfo Region="393, 106, 20, 12" Text="OK" />
+                  </scg:List>
+                </uc:CVCache.OcrTexts>
+              </uc:CVCache>
+            </scg:List>
+          </uc:CvCacheContainer.Caches>
+        </uc:CvCacheContainer>
+      </p:CVScope.DesignTimeCacheContainer>
+      <p:CVScope.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+        </ActivityFunc>
+      </p:CVScope.OCREngine>
+      <p:CVScope.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d4f0b79b-00fb-4c35-b4c7-1d6e8c15f4f1" InformativeScreenshot="1758f186fbbd6fad14cc3d8db2f85120" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Reset Test Data - Google Chrome' /&gt;&lt;ctrl name='acme-test.uipath.com diz' role='dialog' /&gt;&lt;ctrl idx='2' role='pane' /&gt;" WaitForReady="INTERACTIVE">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+        </ui:Target>
+      </p:CVScope.Target>
+      <p:CVScope.UseLocalServer>
+        <InArgument x:TypeArguments="x:Boolean" />
+      </p:CVScope.UseLocalServer>
+    </p:CVScope>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: ACME System 1 - Reset Test Data" sap:VirtualizedContainerService.HintSize="484,489" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="95c7b53c-b6f7-4fce-a9bf-8bba8e0d4947" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log Out'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95c7b53c-b6f7-4fce-a9bf-8bba8e0d4947" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/reset-test-data" CvTextArea="1247, 146, 52, 17" CvTextArgument="Log Out" CvType="Text" DesignTimeRectangle="1233, 129, 80, 50" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Log Out'" FullSelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:innerText='Log Out' /&gt;" Guid="56ebe4c0-99f7-4c43-aa82-3967918093ab" InformativeScreenshot="3a7d18ee462c9fcc7013734b07ceb0c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Reset Test Data' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="1247, 146, 52, 16" CvTextArgument="Log Out" CvType="Text" DesignTimeRectangle="1247, 147, 52, 16" ElementType="Text" FriendlyName="'Log Out'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1358, -8, 1456, 876" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAReSURBVFhHvZdtbFNlFMcf3SxUfI0miLAEWdShCV+EGD9oUJBJAobwQb8IGklkKEQkcy8MZK90tGsnZbxsvkDmxsYkS8QFPhDYLIy+sbv2rhW3dYPFbGyVbYwJJMu2wzm3Prd317ZCc+uHf9vnPC/n13PPc57nMrZX6EPdQo39zyKf1wgAZJWQ2sJtzYVrkw+lDT9G5UbBZWB5TmC7XIlRHgnXJ4hSyecwAYwxAzawM/1EoKFSvLEh97eBjOw4xedmNg9k7LSFRO2sloEMg2Po0x3n+4tYMUaiUIr0SAiAiL5xwfrGqyvSt69hiZZuXzv6cwP+cQVAoRveqQtsizRBS33vHV6cTAD5agA0rG7o+SLSpHg0ODG9aGlFR+vy+kCl0l4p3HgpKkC6RgAA8GxSqQfY5zZgm22wq3XwFO+zOIeiA6z5OQyQctBXpTd6BdwZwrsNPVZuV2vJD3/YWOFl9xNmr5hULGwiW8v1OxvZpmZg5SKw7a2Y8e3Ax5c5g9EB1p4MA+hNnjssH7dlth2WHusMcrta8yt8wHLswIpwbEHbUW5P/e4KsK0XJDX2jBVw+30DPGkR7awIt8pOJ7xR03WO29VadNg/Ke1tLDJPfyvuUfbtbu5fn+MIvqK0HYmVAzMAzKJTAdCsXEQpBJimMQQwx+TNjzRm6PbUQ/x3lWc4cQC60nYZYOEhP+jxsTxqbAfMp3JurxZHNAY44p/iAHpFBB63eIF9jbmBJVhn9Bi5vdanPYAcASUA/mtgu7H24+H2nLVDttdoDZAaBWAB7Q4CwLo/d38cAE9Z7hsg4iOIC+B9BcDsfR6XdGrhFltW3XWe29VKq/JPSAAGHFsiyPs9LgBlJcQk8mGFA5ZlhxX1gTPcrlbKobCjOWavidvjAnjreEAG+Ph03yn21SVgmZfg9druAW5XK9mI2Y5HOct2gFUIbuH25w/EAfBmTRjgqH9ks1RK6VDBx9B5a+IF3sc1DbCE5TqoBEvb7drfE/N431xrx4MDrKwPA5D0Zeg8FxehwXvckHfh+icmVzCt7vfRxTkt/VmMzopinLv1IrxW03VTOTdaBKpjAbynOo6b/hzfwj46hxmO/ZQPGGZdGYac2plYZOgOSU4+s8HoFKxSzk2hHKBHg3VgntUnnxExI6AGIH3Y1NfGdmAufInHKk2ik48umBgRsusK3LDhbL9c6biYAZ1suyglMUbpILfX+R8QgNTUO77sg8beX58xeuAxrO3JeL7Pt4jjG3+5+lPf3UldpDlvH+++mXqgY/LlSj8srw1kcfsxMcZhFA1ASx0WYgDglSzhl9IfPcNpUQHwUro20iStNQsf47+v5ZjN6072lpy4Mrqw3BV81eSYKSPKjCq1D0ptc4Qx/6UK4a8XjY6hdcmUoJi86FsCCL2aIUQSdszGRHsYvylMWusRFNuLotoReh2UXs1CDXpXo9cl2l5ElwjxtblPEn50o0ZQQUmGf74ToZlro0+h8x4tMHhuvyezngAAAABJRU5ErkJggg==" InformativeScreenshot="e419880d0e42ee0fad48b5c91f0484ec.jpg" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Reset Test Data' /&gt;" Title="ACME System 1 - Reset Test Data" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Desconectar Fechar - final&quot;]" />
+  </Sequence>
+</Activity>
